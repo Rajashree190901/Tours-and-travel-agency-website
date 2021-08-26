@@ -1,0 +1,73 @@
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:#76b5c5;
+  color: crimson;
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+.book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:.3rem;
+  align-items: center;
+  
+}
+
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:90%;
+}
+.book .row form{
+  flex:1 1 40rem;
+  margin: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+  border-radius:.5rem;
+}
+
+.book .row form .inputBox{
+  padding:10px 20px;
+}
+
+.book .row form .inputBox input{
+  width:100%;
+  padding:10px;
+  border:.1rem solid rgba(0,0,0,.1);
+  font-size: 1.2rem;
+  color:#333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3{
+  font-size: 1.5rem;
+  padding:1rem 0;
+  color:crimson;
+}
+.book .row form .btn{
+  display: inline-block;
+  margin: 20px auto;
+  background:crimson;
+  color:#fff;
+  padding:10px 20px;
+  border-radius: 30px;
+  border:.2rem solid crimson;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.book .row form .btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:crimson;
+}
+

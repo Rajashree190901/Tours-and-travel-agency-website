@@ -1,0 +1,81 @@
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(193, 66, 66, 0.5);
+  color:crimson;
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.packages .box-container .box{
+  flex:1 1 30rem;
+  border-radius:30px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+}
+
+.packages .box-container .box img{
+  height:25rem;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content{
+  padding:2rem;
+}
+
+.packages .box-container .box .content h3{
+  font-size:2rem;
+  color:#333;
+}
+
+.packages .box-container .box .content h3 i{
+  color:crimson;
+}
+
+.packages .box-container .box .content p{
+  font-size:1.7rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+.packages .box-container .box .content .stars i{
+  font-size:1.7rem;
+  color:crimson;
+}
+
+.packages .box-container .box .content .price{
+  font-size: 2rem;
+  color:#333;
+  padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+ .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:crimson;
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid crimson;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 30px;
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel&Tour Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="webstyle.css">
+    
+
+</head>
+<body>
+<header>    
+        <div class="logo">
+           <img src="bird.png" height="80px";width="80px" >
+       </div>
+        <a href="#" class="brand">DivineFly</a>
+        <div class="navbar">
+            <div class="navbar-items">
+               <a href="#Home">Home</a>
+               <a href="book.html">Book Now</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="services.html">Services</a>
+               <a href="pack.html">Packages</a>
+               <a href="index1.html">Contact</a>
+            
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Type here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form> 
+    </header>
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+   
+   <i class="fas fa-times" id="form-close"></i>
+   
+   <form name="myform" action="LOG.php" method="POST">
+    <h3>Login Form</h3>
+    <input type="text" class="box" name="name" placeholder="enter your username" required>
+    <input type="email" class="box" name="email" placeholder="enter your email-id" required>
+    <input type="password" class="box" name="passworda" placeholder="enter your password" required>
+    <input type="password" class="box" name="passwordb" placeholder="retype retype password" required>
+
+    <input type="submit" value="login now" class="btn">
+     <p>Don't have an account? <a href="booknow.html">register now</a></p>
+</form>
+
+</div>
+   <section class="home">
+       <video  class=" video-slider active" src="video4.mp4" autoplay muted loop></video>
+       <video  class=" video-slider" src="video3.mp4" autoplay muted loop></video>
+       <video  class=" video-slider" src="vid4.mp4" autoplay muted loop></video>
+       <video  class=" video-slider" src="video2.mp4" autoplay muted loop></video>
+       <video  class=" video-slider" src="video5.mp4" autoplay muted loop></video>
+       <video  class=" video-slider" src="video6.mp4" autoplay muted loop></video>
+       <div class="content active">
+           <h1>Travel Around The World ..<br><span>Enjoy Like A Flying Bird</h1></span></h1>
+            
+           
+       </div>
+        <div class="content">
+           <h1>Resort Beach..<br><span>Feel ur Pleasent Nature</h1></span></h1>
+            
+       </div>
+        <div class="content">
+           <h1>Over Seas..<br><span> Admire the Waves Around</h1></span></h1>
+            
+       </div>
+        <div class="content">
+           <h1>Hiking Mountains..<br><span> View the best climbing</h1></span></h1>
+            
+       </div>
+        <div class="content">
+           <h1>Camping..<br><span>Enjoy ur Road trip</h1></span></h1>
+           
+       </div>
+       <div class="content">
+           <h1>Historical Statue..<br><span>Admire the work of Ancient Prople </h1></span></h1>
+           
+       </div>
+       
+       <div class="slider-nav">
+         <div class="nav-dot active"></div>
+         <div class="nav-dot "></div>
+         <div class="nav-dot"></div>
+         <div class="nav-dot"></div>
+         <div class="nav-dot"></div>
+         <div class="nav-dot"></div>
+           
+       </div>
+     </section>
+
+    <div id="about" class="about">
+
+    <h1 class="heading"><span>A</span>bout <span>O</span>ur <span>T</span>ravel&<span>T</span>our <span>A</span>gency</h1><br><br>
+     
+     <div class="row">
+
+        <div class="image">
+            <img src="tour.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Our Travel Agency is best to choose that you deserve to kickstart ur jounery!!!<h3><br>
+             
+            <a href="#"><button class="btn btn1">about us</button></a>
+            <a href="booknow.html"><button class="btn btn2">Travel Around</button></a>
+        </div>
+    </div>
+   </div>
+   <br><br><br>
+
+   <!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><a href="">ABOUT US</a></h3>
+            <p> DIVINE FLY is an experienced travel management company. We work with you to manage all elements of your travel in an efficient, cost effective and ethical manner.</p>
+        </div>
+        <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">INDIA(CHENNAI)</a>
+           
+        </div>
+        <div class="box">
+           
+        <a href="home">HOME</a>
+        <a href="book.html">BOOK</a>
+        <a href="pack.html">PACKAGES</a>
+        <a href="services.html">SERVICES</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="index1.html">CONTACT</a>
+        </div>
+        <div class="box">
+            <h3>Contact us through</h3>
+            <a href="https://github.com/Rajashree190901">github</a>
+            <a href="raji190901@gmail.com">mail</a>
+            <a href="https://www.linkedin.com/in/rajashree-g-d-5907821b1/">linkedin</a>
+            
+        </div>
+
+    </div>
+</section>
+<script type="text/javascript" src="webscript.js"></script>  
+   
+     
+</body>
+</html>

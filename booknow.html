@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page for Travel</title>
+    <link rel="stylesheet" href="booknow.css">
+<body>  
+  <!-- book section starts  -->
+  <section class="book" id="book">
+  <h1 class="heading" align="center">
+    <span>b</span>
+    <span>o</span>
+    <span>o</span>
+    <span>k</span>
+    <span class="space"></span>
+    <span>n</span>
+    <span>o</span>
+    <span>w</span>
+  </h1>
+  
+    <div class="row" >
+
+        <div class="image">
+            <img src="https://esc-alsace.org/wp-content/uploads/2016/06/female-photographer-travel-icons-colorful-illustration-cartoon-tourist-symbols-internationally-famous-landmarks-32114708.jpg" alt="">
+        </div>
+        <form action="registration.php" method="POST" >
+            <div class="inputBox">
+                <h3> email</h3>
+                <input type="text" placeholder="ur email" name="email">
+            </div>
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name" name="whereto">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests" name="howmany">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date" name="adate">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date" name="ldate">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>

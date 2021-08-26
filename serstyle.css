@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+body{
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+   overflow-x: hidden;
+   min-height: 2000px;
+   
+}
+.carousel-item img{
+   width: 100%;
+   height:100vh;
+   position: relative;
+   animation: zoom 3s linear infinite;
+}
+@keyframes zoom{
+ 0%{
+   transform: scale(1.3);
+ }
+ 15%{
+   transform: scale(1);
+ }
+ 85%{
+   transform: scale(1.2);
+ }
+ 100%{
+   transform: scale(1.3);
+ }
+}
+ .carousel-item {
+     display: block;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: 0.6;
+ }
+
+.carousel-caption {
+   bottom: 180px;
+   padding-left: 100px;
+   padding-right: 100px;
+
+}
+.carousel-caption h1{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-size: 50px;
+   font-weight: 500;
+   font-family: 'Nutino', sans-serif;;
+  
+}
+.carousel-caption p{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-size: 18px;
+   font-family: 'Nutino', sans-serif;;
+  
+}
+.slider-btn{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   
+}
+ .slider-btn .btn{
+   
+   border-radius:20px;
+   border-color: transparent;
+   font-size: 1rem;
+   font-family: 'Nutino', sans-serif;
+   color: white;
+   background: darkred;
+   display: inline-block;
+   padding: 10px 20px;
+   box-shadow: 2px 4px 5px 6px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-decoration: none;
+   transition: 0.4s linear;
+}
+.slider-btn .btn:hover{
+
+   background: transparent;
+   border: 3px solid #fff;
+}
+.services h1{
+   text-align: center;
+   position: relative;
+   font-size: 40px;
+   font-weight: 500;
+   font-family: 'Nutino',sans-serif;
+   color: #000;
+   margin-bottom: 30px;
+   padding-bottom:20px ;
+}
+h1:after{
+   content:'';
+   background:crimson;
+   display: block;
+   width: 130px;
+   height: 4px;
+   margin: 19px auto;
+   transition: 3s linear infinite;
+}
+
+.services .box-container{
+
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+
+  gap: 40px;
+  margin-left: 200px;
+  justify-content: center;
+  align-items: center;
+ flex-wrap: wrap;
+ }
+ .services .box-container .box{
+   position: relative;
+   width: 300px;
+   height: 420px;
+   background: #fff;
+   margin: 20px;
+   border-radius: 30px;
+   bottom: 10px;
+   padding-bottom: 20px;
+   text-align: center;
+   overflow: hidden;
+   box-shadow: 2px 5px 6px 7px grey;
+   transition: 0.5s;
+ }
+  .box-container:hover .box{
+   filter:blur(20px);
+   transform: scale(0.9);
+   opacity: 0.6;
+  }
+.box-container .box:hover{
+    filter:blur(0px);
+   transform: scale(0.9);
+   opacity: 1;
+}
+   
+ .services .box-container .box .card-circle{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   clip-path: circle(160px at center  0);
+   text-align: center;
+ }
+
+ .services .box-container .box .card-circle i{
+   color:cornsilk;
+   font-size: 4.5rem;
+   padding: 20px;
+}
+.services .box-container .box .card-content{
+   position: absolute;
+   bottom: 10px;
+   page-break-after: 20px;
+   text-align: center;
+   align-items: center;
+   display:table-cell;
+}
+.services .box-container .box .card-content p{
+   color: grey;
+}
+.services .box-container .box .card-content a{
+   position: relative;
+   display: inline-block;
+   padding: 10px 20px;
+   background: #000;
+   color: cornsilk;
+   border-radius: 40px;
+   text-decoration: none;
+   margin-top: 20px;
+   align-items: center;
+   display: table-cell;
+}
+.box-container .box:nth-child(1) .card-circle,.box-container .box:nth-child(1) .card-content a{
+   background:#D409F3;
+}
+.box-container .box:nth-child(2) .card-circle,.box-container .box:nth-child(2) .card-content a{
+   background:#f8fc03;
+}
+.box-container .box:nth-child(3) .card-circle,.box-container .box:nth-child(3) .card-content a{
+   background:#da2268;
+}
+   .box-container .box:nth-child(4) .card-circle,.box-container .box:nth-child(4) .card-content a{
+   background:#148F77 ;
+}
+.box-container .box:nth-child(5) .card-circle,.box-container .box:nth-child(5) .card-content a{
+  background:#B44141;
+}
+.box-container .box:nth-child(6) .card-circle,.box-container .box:nth-child(6) .card-content a{
+   background:#43524F;
+}

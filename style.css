@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background:#fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 100%;
+  max-width: 860px;
+  height: 700px;
+  background-color:#fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color:#34d2eb;
+  position: relative;
+ }
+ .circle{
+  border-radius: 50%;
+  background:linear-gradient(140deg, transparent 20%, #349eeb);
+  position: absolute;
+}
+.circle.one{
+  width: 140px;
+  height: 140px;
+  top: 140px;
+  right: -40px;
+}
+.circle.two{
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 40px;
+}
+.circle.three{
+  width: 70px;
+  height: 70px;
+  top: 100px;
+  right: 300px
+}
+.contact-form:before{
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color:#34d2eb;
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+form {
+  padding: 2rem 2.1rem;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+}
+.title{
+  color:crimson;
+  font-weight:800;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom:0.7rem;
+  transition: 0.3s;
+}
+.input-container{
+  position: relative;
+  margin: 2rem 0;
+}
+
+.input{
+  width: 114%;
+  outline:none;
+  border: 3px solid #fff;
+  background: none;
+  padding:15px 20px;
+  color: cornsilk;
+  font-weight:500;
+  font-size: 0.95rem;
+  letter-spacing:0.5px;
+  border-radius:40px;
+  transition: 0.3s;
+}
+
+.textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 200px;
+  border-radius: 22px;
+  resize:none;
+  overflow-y: auto;
+}
+.input-container label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-40%);
+  padding: 0 0.4rem;
+  color: cornsilk;
+  font-size: 1.0rem;
+  font-weight: 400;
+  pointer: cursor;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.input-container.textarea label{
+  top: 1rem;
+  transform: translateY(0);
+}
+.btn{
+  padding: 10px 20px;
+  background-color: crimson;
+  border: 10px solid crimson;
+  font-size: 0.95rem;
+  color: cornsilk;
+  line-height: 1;
+  border-radius: 90px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: transparent;
+  color: cornsilk;
+}
+.input-container span{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+ 
+}
+.input-container span:before,.input-container span:after{
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color:#34d2ed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-container span:before{
+  left: 50%;
+}
+.input-container span:after{
+  right: 50%;
+}
+.input-container.focus label{
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.9rem;
+}
+.input-container.focus span:before,.input-container.focus span:after{
+   width: 50%;
+   opacity: 1;
+}
+.icon{
+  width:35px;
+}
+.contact-info{
+  padding: 2.3rem 2.2rem;
+  position: relative;
+  transition: 0.3s;
+}
+.contact-info .title{
+  color:#42a7f5;
+}
+.para{
+  color:crimson;
+  margin:1.5rem 0 2rem 0;
+}
+.information {
+  display: flex;
+  color: crimson;
+  margin:0.7rem 0;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.icon{
+  width:36px;
+  margin-right:0.8rem;
+}
+.social-media{
+  padding: 2rem 0 0 0;
+}
+.social-media p{
+  color:#42a7f5;
+  font-size:1.6rem;
+}
+.social-icons{
+  display:flex;
+  margin-top: 0.5rem;
+}
+.social-icons a{
+  width:  35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg,#ed0c5b,#eb73af);
+  color: cornsilk;
+  text-align: center;
+  line-height: 35px;
+  margin-right:0.5rem;
+  transition: 0.3s;
+}
+.social-icons a:hover{
+   transform: scale(1.05);
+}
+.contact-info:before{
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  background-color:#349eeb;
+  border-radius: 50px;
+  bottom: -34px;
+  right: 50px;
+  opacity: 0.3;
+ }
+
+
+
